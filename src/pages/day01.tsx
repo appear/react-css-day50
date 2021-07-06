@@ -36,7 +36,7 @@ const Panel = styled.div<{ active?: boolean }>`
   `}
 `
 
-function Day01() {
+function ExpendingCard() {
   const [page, setPage] = useState(0)
 
   const handlePage = (page: number) => setPage(page)
@@ -56,4 +56,4 @@ function Day01() {
   )
 }
 
-export default Day01
+export default ExpendingCard
