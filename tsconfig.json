@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "jsx": "preserve",
-    "lib": ["dom", "es2017", "es2020.promise"],
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "es2017",
+      "es2020.promise"
+    ],
     "baseUrl": "src",
-    "paths": {
-      "$pages/*": ["pages/*"],
-      "$pages": ["pages/index"]
-    },
     "moduleResolution": "node",
     "strict": true,
     "allowJs": true,
@@ -24,13 +24,23 @@
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "typeRoots": ["./node_modules/@types", "./typings/**/*"],
-    "types": ["react", "node"]
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings/**/*"
+    ],
+    "types": [
+      "react",
+      "node"
+    ],
+    "noFallthroughCasesInSwitch": true
   },
   "exclude": [
     "node_modules",
     "dist",
     "__tests__"
   ],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
